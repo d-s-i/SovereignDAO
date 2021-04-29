@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+   }
+*{
+  box-sizing:border-box;
+}
+body{
+    font-size: 1.1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Roboto;
+    background-color: #1c1d22;
+    color: #A9AFAF;
+   }
+ul{
+    list-style-type: none;
+    display: flex;
+}
+a{
+  text-decoration: none;
+}
+.logo{
+	width: 50px;
+	height: auto;
+}
+.top{
+  display: flex;
+}
+.top-right{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 82%;
+}
+.redirection-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15%;
+    float:right;
+}
+.redirection-menu:hover{
+  cursor: pointer;
+}
+.image-ronde{
+    width : 40px; 
+    height : auto;
+    border: none;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px; 
+  }
+  .address{
+    padding-right: 5px;
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .but-1{
+    margin-right: 0px;
+    margin-left: 25px;
+    border: none;
+    background-color: #505050; 
+    color: white; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+  }
+  .but-2{
+    margin-right: 25px;
+    margin-left: 25px;
+    border: none;
+    background-color: #505050;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+  }
+  .balance{
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+  }
+  .entreprise-name{
+    font-family: Quicksand;
+    font-size: 1.4em;
+    color: white;
+  }
+  .categories{
+    padding-bottom: 0.5%;
+    font-size: 1em;
+    display:flex;
+    justify-content:center;
+    margin-right: 4%;;
+  }
+  .categories a{
+    color: #A9AFAF
+  }
+  .menu .current a{
+    color: white;
+    font-weight:bold;
+  }
+  .menu{
+    border-bottom: 1px #A9AFAF solid;
+    padding-top: 2%;
+    justify-content: flex-start;
+    padding-left: 0px;
+    color: #A9AFAF;
+  }
+  .menu .current{
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  a:active, a:hover{
+    text-decoration: none;
+  }
+  .css-1{
+    margin-top: 5%;
+    color: white;
+  }
+  .css-3{
+    margin-bottom: 5%;
+  }
+  .p1{
+    line-height: 1.45em;
+    font-size: 1em;
+  }
+  .square-use-sov{
+    border: 1px #A9AFAF solid;
+    border-radius: 6px;
+    padding-top: 0%;
+    padding-left: 0%;
+    background-color: #222937;
+}
+.square-use-sov:hover{
+  cursor:pointer;
+}
+.square:hover{
+  cursor:pointer;
+}
+.img-1{ 
+  float:left;
+  width: 80px;
+  height: auto;
+  margin-right: 1%;
+  margin-top: 0px;
+}
+.css-4{ /* stake SOV and recive fees*/
+  flex-direction:column;
+  margin-top: 0.5%;
+  color: #A9AFAF;
+  font-size: 0.9em;
+}
+.strat-title{ /* Stake SOV*/
+  color: white;
+  margin-top: 1%;
+  margin-bottom: 0.2%;
+  font-size: 1.2em;
+}
+.strat-subtitle{ /* block with image and css*2/4 */
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0.5%;
+  font-size: 0.9em;
+}
+.dot-2{
+  color:white;
+}
+.APY{
+  display:flex;
+  width: 96%;
+  padding-left:0px;
+  background-color: #222937;
+}
+.APY-1{
+  justify-content: flex-start;
+}
+.blue-grey{
+  color:#718096;
+}
+.arrow{
+  margin-top:79%;
+  margin-right:6%;
+  font-size:2.5em;
+  color: white;
+}
+.arrow-2{
+  margin-top:3.5%;
+  margin-right:2%;
+  font-size:2.5em;
+  color: white;
+}
+.APY-arrow{/* bloc pour mettre la flèche au même niveau que les autres*/
+  display:flex;  
+}
+.strat-apy{
+  margin-left:0%;
+}
+.square-2{
+  border: 1px #A9AFAF solid;
+  border-radius: 6px;
+  justify-content:center;
+  display:flex;
+  padding: 0px 0px 0px 0px;
+  background-color: #222937;
+  overflow:auto;
+  margin-bottom: 1.5%;
+}
+.par{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  font-size: 0.9em;
+}
+.square{
+  border: 1px solid #A9AFAF;
+  border-radius: 6px;
+  padding-top: 0.5%;
+  background-color: #222937; 
+  margin-bottom: 1%;
+  width:32.66%;
+}
+.css-5{
+  margin-bottom: 14%; 
+}
+.ul-11{
+  flex-direction:column;
+  width:96%;
+  margin-bottom:10%;
+  font-size: 1.1em;
+}
+.li-11{
+  flex-direction:column;
+  margin-bottom:2%;
+}
+.li12{
+  margin-left:0px;
+  color: white;
+}
+.display-arrow{ /* bloc pour mettre la flèche au même niveau que les autres*/
+  display:flex;
+}
+.for-arrow{ /* bloc pour mettre la flèche tout à droite */
+  width:96%;
+}
+.strats-display{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom:10%;
+}
+.first-strat{ /* mettre de l'espace entre les square de stratégies*/
+  margin-right:1%;
+}
+.second-strat{
+  margin-right:1%;
+}
+.forth-strat{
+  margin-right:1%;
+}
+.fifth-strat{
+  margin-right:1%;
+}
+footer{
+  justify-content:space-between;
+  align-items:center; 
+  font-size: 0.8em;
+  display: flex;   
+}
+footer a{
+  color: #4a5555;
+}
+.social-media{
+  float:left;
+}
+.footer-li{
+  margin-left:5%;
+  justify-content: space-between;
+  color: #4a5555;
+}
+.footer-ul{
+  width: 70%;
+  justify-content: flex-end;
+}
+.img-fun{
+  width:1000px;
+  height:100%;
+}
+.footer-loginpage {
+  margin-top: 50%;
+}
+.login-div {
+  margin-top: 20%;
+}
+.login-title {
+  font-size: 2em;
+  color:white;
+  font-weight: bold;
+}
+.login-subtitle {
+  margin-top: 1.5%;
+  font-size: 1.4em;
+}
+.login-button {
+  background-color: rgba(51, 51, 255, 1);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  padding: 1.5% 5% 1.5% 5%;
+}
+.login-button:hover {
+  background-color: #6666ff;
+}
+.login-input {
+  outline: none;
+  border: none;
+  margin: 1.5% 0% 1.5% 0%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #393b46;
+  color: white;
+  font-size: 1em;
+  padding-left: 2%;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.login-display {
+  display:flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin: 4% 0% 4% 0%;
+}
+.sign-up-link {
+  font-size: 0.9em;
+}
+.sign-up-redirection{
+  color: #A9AFAF;
+}
+.sign-up-redirection:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signup-display {
+  width: 70%;
+  margin: 10% 0% 4% 0%;
+}
+.signup-title {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 5%;
+}
+.title-accounts-examples {
+  margin: 3% 0 2% 0;
+  font-size: 1.5em;
+}
+.account-example {
+  margin-bottom: 1%;
+}
+.white-word {
+  color: white;
+}
+.wrong-password {
+  font-size: 0.8em;
+  color: #ff80b3;
+  margin-bottom: 3%;
+}
+.wrong-login {
+  font-size: 0.8em;
+  color: #ff80b3;
+  margin-top: 3%;
+}
+.hidden {
+  display: none;
+}
+.categories:hover {
+  cursor:pointer;
+}
+.modal__header {
+  font-size: 1.3em;;
+  /* margin-bottom: 4.5rem; */
+  line-height: 1.5;
+  color: white;
+}
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+.modal__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.modal__form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  background-color: #222937; 
+  padding: 0 0 2.5% 2.5%;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 1%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.input-stake-amount {
+  outline: none;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #393b46;
+  color: white;
+  font-size: 1em;
+  padding-left: 2%;
+  margin-left: 5%;
+}
+.display-info-strat {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.APY-text-popup {
+  color: white;
+  font-size: 1.1em;
+  margin-right: 3%;
+}
+.APY-ROI {
+  color: #A9AFAF;
+  margin-bottom: 4%;
+}
+.popup-form {
+  display: flex;
+  margin-top: 5%;
+}
+.amount-popup {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.button-stake {
+  background-color: rgba(51, 51, 255, 1);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  padding: 1.5% 5% 1.5% 5%;
+}
+.amount-available-popup {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 14% 1% 0;
+  font-size: 0.85em;
+
+}
+.button-stake:hover {
+  cursor: pointer;
+  background-color: #6666ff;
+}
+.enter-amount {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 14%;
+  align-items: center;  
+}
+.button-popup-display {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.line-dashboard-display-asset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.asset {
+  display: flex;
+  align-items: center;
+}
+.logo-asset {
+  margin-right: 40%;
+  width: 30px;
+	height: auto;
+}
+.line-dashboard-display-asset-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-bottom: 1.5%;
+}
+.asset-name {
+  color: white;
+}
+.asset-amount {
+  color: white;
+}

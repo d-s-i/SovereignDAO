@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SovereignDAO</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:800px)" href="petite_resolution.css"> 
+        <link rel="icon" href="images/logo.png">
+        <script src="script.js" defer></script>
+      </head>
+<body>
+    <div class="login-page page-content">
+        <div class="login-div">
+            <div class="login-title">SovereignDAO: Automated Investing</div>
+            <div class="login-subtitle">Track and manage all your DeFi assets (and those of your competitors)</div>
+        </div>
+        
+        <div class="wrong-login hidden">Wrong sovereign name or password sir ...</div>
+        
+        <div class="login-display">
+            <form method="post" class="login-form">
+                <input data-username type="text" placeholder="Sovereign name" name="username" class="login-input"/>
+                <input data-password type="password" placeholder="Sovereign secured password" name="password" class="login-input"/>
+            </form>
+            <button class="login-button">Connect</button>
+        </div>
+        
+        <div class="sign-up-link">Want to create an account ? <span class="account-examples sign-up-redirection">Click here to sign up</span></div>
+        <div class="modal modal-strat modal-account-example hidden">
+            <button class="btn--close-modal btn--close-modal-accounts">&times;</button>
+            <div class="title-accounts-examples">You can use one of those accounts</div>
+            <div class="account-example">ACCOUNT 1 : username : <span class="white-word">"sovereign9999777"</span> , password : <span class="white-word">1234</span></div>
+            <div class="account-example">ACCOUNT 2: username : <span class="white-word">"JULIEN"</span> ,password : <span class="white-word">"complicatedPassword"</span></div>
+            <div class="account-example">ACCOUNT 3 : username : <span class="white-word">"Ethos"</span> , assword :<span class="white-word">"buidler123"</span></div>
+            <div class="account-example">ACCOUNT 4 : username : <span class="white-word">"RandomTikToker"</span> password :<span class="white-word">"trolol"</span></div>
+            </div>
+          </div>
+          <div class="overlay hidden"></div>
+    </div>
+    </div>
+
+    <div class="account-display hidden">
+        <header class = "top">
+            <div class="redirection-menu" onclick="document.location='dashboard.html'">
+                <img class = "logo" src = "images/logo.png" />
+                <div class = "entreprise-name" >Sovereign</div>
+            </div>
+            <div class="top-right">
+                <button class = "but-1">Add Liquidity</button>
+                <button class = "but-2">Get SOV</button>
+                <img class="image-ronde"src = "images/profile_picture.png" />            
+                <div class = "address">0x808...606a</div>
+                <div class = "balance">0.5 Ξ</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li class ="categories current">Dashboard</li>
+                <li class ="categories">Strategies</li>
+                <li class ="categories">Protocols</li>
+                <li class ="categories">Governance</li>
+                <li class ="categories">Swap</li>
+                <li class ="categories">Buy Crypto</li>
+                <li class ="categories">Send</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="dashboard-page page-content hidden">
+        <div class="line-dashboard-display-asset-top">
+            <div class="asset">
+                <div class="asset-name-top">Asset</div>
+            </div>
+            <div class="asset-amount-top">Amount</div>
+        </div>
+
+        <div class="asset-array"> </div>
+    </div>
+
+    
+    <div class="strategies-page page-content hidden">
+        <section>
+            <h1 class = "css-1">Strategies</h1>
+            <p class = "p1">Deposit funds into SovereignDAO's top-earning strategies. A small performance fee and withdrawal fee will apply on these strategies, both of which will be distributed to community members staking SDT.</p>
+    
+            <h1 class="css-1">Put your money to work</h1>
+
+            <div class="strats-display">
+                <div class="square first-strat strategy first-strat-usd">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/passiveUSDstrat.png"/>
+                        <h3 class='strat-title'>Passive USD strategy</h3>
+                        <p class="strat-subtitle">Built on top of curve3pool</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li data-apy-USDStrat class="li12">---</li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >USD</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >USD</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >USD</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+                <div class = "square second-strat strategy first-strat-eur">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/passiveEURstrat.png"/>
+                        <h3 class='strat-title'>Passive EUR strategy</h3>
+                        <p class="strat-subtitle">Built on top of curve eur pool</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li data-apy-EURStrat class="li12">---</li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >EUR</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >EUR</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >EUR</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+                
+                <div class = "square third-strat strategy first-strat-btc">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/passiveBTCstrat.png"/>
+                        <h3 class='strat-title'>Passive BTC strategy</h3>
+                        <p class="strat-subtitle">Built on top of curve sBTC pool</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li data-apy-BTCStrat class="li12">---</li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >BTC</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >BTC</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >BTC</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div> 
+            </div>
+    
+        </section>
+
+        <div class="modal modal-strat modal-first-strat-usd hidden">
+            <button class="btn--close-modal">&times;</button>
+            <h2 class="modal__header">Passive USD strategy</h2>
+            <p class="p1">Well, USD is shit dude</p>
+            <div class="popup-form">
+                <div class="display-info-strat">
+                    <div class="line-1">
+                        <div class="APY-text-popup">APY</div>
+                        <div data-apy-BTCStrat class="APY-ROI">---</div>
+                    </div>
+                    <div class="line-2">
+                        <div class="APY-text-popup">Risk</div>
+                        <div class="APY-ROI">Extremely risky</div>
+                    </div>
+                </div>
+                <div class="amount-popup">
+                    <div class="amount-popup-inside">
+                        <div class="amount-available-popup">Amount available : ---</div>
+                        <div class="enter-amount">
+                            <label>Amount</label>
+                            <input class="input-stake-amount" type="text"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-popup-display">
+                <button class="button-stake">Stake &rarr;</button>
+            </div>
+          </div>
+          <div class="overlay hidden"></div>
+    </div>
+
+        <div class="modal modal-strat modal-first-strat-eur hidden">
+            <button class="btn--close-modal">&times;</button>
+            <h2 class="modal__header">Passive EUR strategy</h2>
+            <p class="p1">Just know that your EUR will be move to a liquidity pool inside a curve smart contract that will earn fees.</p>
+            <div class="popup-form">
+                <div class="display-info-strat">
+                    <div class="line-1">
+                        <div class="APY-text-popup">APY</div>
+                        <div data-apy-EURStrat class="APY-ROI">---</div>
+                    </div>
+                    <div class="line-2">
+                        <div class="APY-text-popup">Risk</div>
+                        <div class="APY-ROI">Extremely risky</div>
+                    </div>
+                </div>
+                <div class="amount-popup">
+                    <div class="amount-popup-inside">
+                        <div class="amount-available-popup">Amount available : ---</div>
+                        <div class="enter-amount">
+                            <label>Amount</label>
+                            <input class="input-stake-amount" type="text"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-popup-display">
+                <button class="button-stake">Stake &rarr;</button>
+            </div>
+          </div>
+          <div class="overlay hidden"></div>
+    </div>
+
+          <div class="modal modal-strat modal-first-strat-btc hidden">
+            <button class="btn--close-modal">&times;</button>
+            <h2 class="modal__header">Passive BTC strategy</h2>
+            <p class="p1">This strategy automatically send your BTC to the curve smart contract, earn fees based on trading volume, buy more btc and stake them into the strategy.</p>
+            <div class="popup-form">
+                <div class="display-info-strat">
+                    <div class="line-1">
+                        <div class="APY-text-popup">APY</div>
+                        <div data-apy-BTCStrat class="APY-ROI">---</div>
+                    </div>
+                    <div class="line-2">
+                        <div class="APY-text-popup">Risk</div>
+                        <div class="APY-ROI">Extremely risky</div>
+                    </div>
+                </div>
+                <div class="amount-popup">
+                    <div class="amount-popup-inside">
+                        <div class="amount-available-popup">Amount available : ---</div>
+                        <div class="enter-amount">
+                            <label>Amount</label>
+                            <input class="input-stake-amount" type="text"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-popup-display">
+                <button class="button-stake">Stake &rarr;</button>
+            </div>
+          </div>
+          <div class="overlay hidden"></div>
+    </div>
+
+    <div class="governance-page page-content hidden">    
+        <section>
+            <h1 class = "css-1">Governance</h1>
+            <p class = "p1">The main purposes of Sovereign DAO Tokens are to incentivise liquidity providers on the Sovereign DAO platform as well as getting as many users as possible involved in the governance of the protocol involved. Currently SOV has two main uses: voting and staking. Staking will allow you to earn fees collected across the different products Sovereign DAO is offering. </p>
+            <h1 class = "css-1">Use your SOV</h1>
+            <div class = "square-use-sov">
+                <div class = "css-3">
+                    <img class = "img-1" src = "images/logo.png"/>
+                    <h3 class ="strat-title">Stake SOV</h3>
+                    <p class = "strat-subtitle">Stake your SOV and receive some fees & voting rights</p>
+                </div>
+                <div class="APY-arrow">
+                    <div class="APY">
+                        <div class="APY-1">
+                            <ul class = "list-apy-1">
+                                <li class="dot-1">APY</li>
+                            </ul>
+                
+                            <ul class = "list-apy-2">
+                                <li class="dot-2">45 <span class="blue-grey" >%</span></li>
+            
+                            </ul>
+                        </div>
+            
+                        <div class="APY-2">
+                            <ul class = "list-apy-1">
+                                <li class="dot-1">Balance</li> 
+                            </ul>
+                              
+                            
+                            <ul class = "list-apy-2">
+                                <li class="dot-2">0 <span class="blue-grey" >SOV</span></li>
+                            </ul>                  
+                            
+                        </div>
+            
+                        <div class="APY-3">
+                            <ul class = "list-apy-1">
+                                <li class="dot-1">Staked</li>                     
+                            </ul>
+                            <ul class = "list-apy-2">
+                                <li class="dot-2">0 <span class="blue-grey" >xSOV</span></li>                     
+                            </ul>
+                        </div>
+                        
+            
+                        <div class="APY-4">
+                            <ul class = "list-apy-1">
+                                <li class="dot-1">Claimable Amount</li>
+                            </ul>
+                            <ul class = "list-apy-2">
+                                <li class="dot-2">0 <span class="blue-grey" >SOV</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class= arrow-2>&#8250;</span>
+                </div>
+            </div>
+    
+            <h1 class="css-1">Stake Strategies LP Token</h1>
+            <div class="square-2">
+                <p class="par">SOV earned are automatically harvested on staking and unstaking</p>
+            </div>
+            <div class="strats-display">
+                <div class = "square first-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/eth_sov.png"/>
+                        <h3 class='strat-title'>Uniswap ETH/SOV LP</h3>
+                        <p class="strat-subtitle">Uni-V2</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >UNI-V2</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >UNI-V2</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class="arrow">&#8250;</span>
+                    </div>
+                </div>
+                
+                <div class = "square second-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/Sushi_eth.png"/>
+                        <h3 class='strat-title'>Sushiswap ETH/SOV LP</h3>
+                        <p class="strat-subtitle">SLP</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >SLP</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >SLP</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+                
+                <div class = "square third-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/sdveCRV.png"/>
+                        <h3 class='strat-title'>sd veCRV LP</h3>
+                        <p class="strat-subtitle">SdveCRV-DAO</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >SLP</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >SdveCRV-DAO</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div> 
+                
+                <div class = "square forth-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/crv_btc.png"/>
+                        <h3 class='strat-title'>SD Curve sbtc</h3>
+                        <p class="strat-subtitle">sdcrvRenWSBTC</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >sdcrvRenWSBTC</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >sdcrvRenWSBTC</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+    
+                <div class = "square fifth-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/crv.png"/>
+                        <h3 class='strat-title'>SD Curve 3pool</h3>
+                        <p class="strat-subtitle">sd3Crv</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >sd3Crv</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >sd3Crv</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+    
+                <div class = "square sixth-strat">
+                    <div class="css-5">
+                        <img class = "img-1" src = "images/crv_eur.png"/>
+                        <h3 class='strat-title'>SD Curve eurs</h3>
+                        <p class="strat-subtitle">sdeursCRV</p>
+                    </div>
+                    <div class="display-arrow">
+                        <div class="for-arrow">
+                            <div class="strat-apy">
+                                <ul class="ul-11">
+                                    <li class="li-11">APY</li>
+                                    <li class="li12">201.08 <span class="blue-grey" >%</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Earned</li>
+                                    <li class="li12">0 <span class="blue-grey" >SOV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Balance</li>
+                                    <li class="li12">0 <span class="blue-grey" >sdeursCRV</span></li>
+                                </ul>
+                                <ul class="ul-11">
+                                    <li class="li-11">Staked</li>
+                                    <li class="li12">--- <span class="blue-grey" >sdeursCRV</span></li>
+                                </ul>     
+                            </div>
+                        </div>
+                        <span class= arrow>&#8250;</span>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+
+    <div class="protocols-page page-content hidden">
+    </div>
+
+    <div class="swap-page page-content hidden">
+    </div>
+
+    <div class="buy-crypto-page page-content hidden">
+    </div>
+
+    <div class="send-page page-content hidden">
+    </div>
+
+    <footer class="footer-loginpage">
+        <div class="social-media">
+            <a href="https://twitter.com/CiziaZyke777?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+            
+        <ul class = "footer-ul">
+            <li class="footer-li"><a href="privacy.html"  target="_blank">Privacy policy</a> </li>
+            <li class="footer-li"><a href="privacy.html" target="_blank">Risks</a></li>
+            <li class="footer-li"><a href="privacy.html" target="_blank">Cookie policy</a></li>
+            <li class="footer-li"><a href="privacy.html" target="_blank">Terms of use</a></li>
+            <li class="footer-li">© Sovereign 2021</li>
+        </ul> 
+      </footer>
+</body>
+</html>
